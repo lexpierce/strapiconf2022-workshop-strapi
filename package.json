@@ -29,14 +29,5 @@
     "node": ">=10.0.0",
     "npm": ">=6.0.0"
   },
-  "license": "MIT",
-  "trustedDependencies": [
-    "@fortawesome/fontawesome-common-types",
-    "@fortawesome/fontawesome-free",
-    "@fortawesome/fontawesome-svg-core",
-    "@fortawesome/free-brands-svg-icons",
-    "@fortawesome/free-solid-svg-icons",
-    "core-js",
-    "core-js-pure"
-  ]
+  "license": "MIT"
 }
