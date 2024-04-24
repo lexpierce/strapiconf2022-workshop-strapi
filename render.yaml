@@ -6,12 +6,14 @@ services:
     # Update the following line with your Strapi GitHub repo
     repo: https://github.com/lexpierce/strapiconf2022-workshop-strapi
     branch: main
-    buildCommand: yarn install && bun run build
+    buildCommand: bun install && bun pm trust --all && bun run build
     startCommand: bun run start
     healthCheckPath: /_health
     envVars:
+      - key: BUN_VERSION
+        value: ~1.1.4
       - key: NODE_VERSION
-        value: ~16.13.0
+        value: ~20.12.2
       - key: NODE_ENV
         value: production
       - key: CLOUDINARY_NAME
@@ -40,9 +42,13 @@ services:
     # Update the following line with your Remix GitHub repo
     repo: https://github.com/lexpierce/strapiconf2022-workshop-remix
     branch: step-5
-    buildCommand: npm install && bun run build
+    buildCommand: bun install && bun run build
     startCommand: bun run start
     envVars:
+      - key: BUN_VERSION
+        value: ~1.1.4
+      - key: NODE_VERSION
+        value: ~20.12.2
       - key: STRAPI_URL_BASE
         fromService:
           type: web
