@@ -1,7 +1,7 @@
 services:
   - type: web
     name: productivity-tips-api
-    env: node
+    runtime: node
     plan: free
     # Update the following line with your Strapi GitHub repo
     repo: https://github.com/lexpierce/strapiconf2022-workshop-strapi
@@ -35,7 +35,7 @@ services:
 
   - type: web
     name: productivity-tips-web
-    env: node
+    runtime: node
     plan: free
     # Update the following line with your Remix GitHub repo
     repo: https://github.com/lexpierce/strapiconf2022-workshop-remix
